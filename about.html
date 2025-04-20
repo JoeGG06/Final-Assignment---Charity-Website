@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toronto Humane Society</title>
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="img/Logo.png" alt="Toronto Humane Society Logo">
+    </div>
+    <nav class="nav">
+      <a href="#" class="burger-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 7L7 7M20 7L11 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M20 17H17M4 17L13 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M4 12H7L20 12" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    
+      <ul class="main-menu links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    
+    
+      <div class="side-menu">
+        <ol>
+          <li><a href="#" class="xbtn">X</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ol>
+      </div>
+    </nav>    
+  </header>
+
+  <div class="About">
+  <div class="About-content">
+    <h2>About Toronto Humane Society</h2>
+    <p>
+      Founded in 1887, the Toronto Humane Society 
+      is dedicated to improving the lives of animals 
+      and fostering a compassionate society. We work 
+      to ensure that every animal is treated with 
+      respect and given the opportunity to thrive in 
+      a safe and caring environment.
+    </p>
+    <p>
+      Our mission is to promote humane care, 
+      prevent cruelty, and provide shelter, medical 
+      treatment, and education. We are committed to 
+      creating a world where all animals are valued, and 
+      we continue to advocate for their well-being through 
+      outreach, support, and innovative programs.
+    </p>
+    <p>
+      <a href="about.html" class="btn">Learn More</a>
+    </p>
+  </div>
+
+  <div class="About-image">
+    <img src="img/Dog trainer image.png" alt="Dog trainer image">
+  </div>
+</div>
+
+<div class="Why-Choose">
+  <img src="img/Dog and Vet.png" alt="Dog and Vet Image">
+  <div class="Why-Content">
+    <h2>Why Choose Us</h2>
+    <p>
+      1. Experienced and Trusted: Over 130 years of dedication to animal welfare.
+    </p>
+    <p>
+      2. Comprehensive Care: We provide shelter, medical treatment, and behavioral support for animals in need.
+    </p>
+    <p>
+      3. Community-Focused: Strong programs that help both animals and their human companions.
+    </p>
+    <p>
+      4. Innovative Solutions: Leading the way with new approaches to animal care and welfare.
+    </p>
+    <p>
+      5. Compassionate Team: Our staff and volunteers are passionate about making a difference in the lives of animals.
+    </p>
+  </div>
+</div>
+
+<div class="Community-Programs">
+  <h2>Learn More About Our Community Services And Programs</h2>
+  <p>
+    The Toronto Humane Society offers adoption, veterinary care, 
+    pet support, and education. We also provide specialized 
+    services for senior pets and emergency rescue. Join us in 
+    supporting a compassionate community for animals and people! 
+    Join us in building a compassionate community where both pets and people thrive!
+  </p>
+
+  <div class="flex">
+    <div>
+      <img src="img/Dog Walking Image.png" alt="Dog Walkers">
+      <a href="volunteer.html" class="btn">Community Services</a>
+    </div>
+    <div>
+      <img src="img/Bunny Image.png" alt="Girl holding bunny">
+      <a href="volunteer.html" class="btn">Programs</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+    <div class="footercontainer">
+      <div class="Ftitle">
+        <h1>TORONTO</h1>
+        <h1>HUMANE</h1>
+        <h1>SOCIETY</h1>
+        <p>Like No Other</p>
+      </div>
+
+      <div class="footersection">
+        <h3>Home</h3>
+        <p>Like No Other</p>
+        <p>Quick Links</p>
+        <p>Contribute</p>
+      </div>
+
+      <div class="footersection">
+        <h3>About Us</h3>
+        <p>About</p>
+        <p>Why Choose Us</p>
+        <p>Learn More</p>
+      </div>
+
+      <div class="footersection">
+        <h3>Volunteer</h3>
+        <p>How To Volunteer</p>
+        <p>Opportunities</p>
+        <p>Requirements</p>
+      </div>
+
+      <div class="footersection">
+        <h3>Donate</h3>
+        <p>The Impact</p>
+        <p>Ways To Give</p>
+        <p>Memberships</p>
+        <p>Programs</p>
+      </div>
+
+      <div class="footersection">
+        <h3>Contact</h3>
+        <p>Hours & Contact</p>
+        <p>Get In Touch</p>
+        <p>Stay Connected</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger-icon');
+    const xbtn = document.querySelector('.xbtn');
+    const sideBar = document.querySelector('.side-menu');
+  
+    function openSidebar() {
+      sideBar.style.width = '100vw';
+    }
+  
+    function closeSidebar() {
+      sideBar.style.width = '0vw';
+    }
+  
+    burger.addEventListener('click', openSidebar);
+    xbtn.addEventListener('click', closeSidebar);
+  </script>  
+
+</body>
+</html>

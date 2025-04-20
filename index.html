@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toronto Humane Society</title>
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="img/Logo.png" alt="Toronto Humane Society Logo">
+    </div>
+    <nav class="nav">
+      <a href="#" class="burger-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 7L7 7M20 7L11 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M20 17H17M4 17L13 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M4 12H7L20 12" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    
+      <ul class="main-menu links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    
+    
+      <div class="side-menu">
+        <ol>
+          <li><a href="#" class="xbtn">X</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ol>
+      </div>
+    </nav>
+    
+  </header>
+
+  <div class="herocontainer">
+    <div class="herocontent">
+      <div class="title">
+        <h1>TORONTO</h1>
+        <h1>HUMANE</h1>
+        <h1>SOCIETY</h1>
+        <p>Like No Other</p>
+       
+      </div class="DogCatImage">
+      <img src="img/dog and cat.png" alt="Dog and Cat">
+    </div>
+  </div>
+
+  <div class="flex">
+    <div>
+      <img src="img/volunteer.png" alt="Volunteer Image">
+      <a href="volunteer.html" class="btn">Volunteer</a>
+      <p>
+        The dedication and support of our 400+ volunteers help us to continue to 
+        Improve the Lives of Animals while strengthening the human-animal bond 
+        in the community. 
+      </p>
+    </div>
+    <div>
+      <img src="img/vet.png" alt="Vet Image">
+      <a href="donate.html" class="btn">Donate</a>
+      <p>
+        The Toronto Humane Society excels in shelter care, animal training, 
+        behavioural consultations, and veterinary services, finding new homes 
+        for thousands of animals.
+      </p>
+    </div>
+    <div>
+      <img src="img/Dog Food.png" alt="Dog Bowl Image">
+      <a href="about.html" class="btn">About</a>
+      <p>
+        Are you looking to help animals? Look no further – give a gift to 
+        Toronto Humane Society today, and help thousands of animals not 
+        only in our care, but in our community.
+      </p>
+    </div>
+  </div>
+  
+  <div class="impact">
+    <img src="img/Family Photo.png" alt="Family Image">
+    <div class="impact-content">
+      <h2>Everyone Can Contribute In Their Own Way</h2>
+      <p>
+        Everyone has the power to make a meaningful impact, 
+        no matter the size of the gesture. Whether it's 
+        through donations, volunteering, fostering, or 
+        spreading awareness, every action helps create a 
+        brighter future for animals. Donations provide vital 
+        care, while volunteers create a compassionate environment 
+        for animals. Fostering gives animals a safe space to 
+        heal and grow, and raising awareness inspires others to 
+        get involved. Together, we can make lasting change and 
+        ensure every animal has the opportunity to lead a happy, 
+        healthy life. Your support is essential, and every effort 
+        counts in making a difference.
+      </p>
+      <a href="volunteer.html" class="btn">Make a Difference Today</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="Ftitle">
+        <h1>TORONTO</h1>
+        <h1>HUMANE</h1>
+        <h1>SOCIETY</h1>
+        <p>Like No Other</p>
+      </div>
+
+      <div class="footersection">
+        <h3>Home</h3>
+        <p>Like No Other</p>
+        <p>Quick Links</p>
+        <p>Contribute</p>
+      </div>
+
+      <div class="footersection">
+        <h3>About Us</h3>
+        <p>About</p>
+        <p>Why Choose Us</p>
+        <p>Learn More</p>
+      </div>
+
+      <div class="footersection">
+        <h3>Volunteer</h3>
+        <p>How To Volunteer</p>
+        <p>Opportunities</p>
+        <p>Requirements</p>
+      </div>
+
+      <div class="footersection">
+        <h3>Donate</h3>
+        <p>The Impact</p>
+        <p>Ways To Give</p>
+        <p>Memberships</p>
+        <p>Programs</p>
+      </div>
+
+      <div class="footersection">
+        <h3>Contact</h3>
+        <p>Hours & Contact</p>
+        <p>Get In Touch</p>
+        <p>Stay Connected</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger-icon');
+    const xbtn = document.querySelector('.xbtn');
+    const sideBar = document.querySelector('.side-menu');
+  
+    function openSidebar() {
+      sideBar.style.width = '100vw';
+    }
+  
+    function closeSidebar() {
+      sideBar.style.width = '0vw';
+    }
+  
+    burger.addEventListener('click', openSidebar);
+    xbtn.addEventListener('click', closeSidebar);
+  </script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toronto Humane Society</title>
+  <link rel="stylesheet" href="css/donate.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="img/Logo.png" alt="Toronto Humane Society Logo">
+    </div>
+    <nav class="nav">
+      <a href="#" class="burger-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 7L7 7M20 7L11 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M20 17H17M4 17L13 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M4 12H7L20 12" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    
+      <ul class="main-menu links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+        
+      <div class="side-menu">
+        <ol>
+          <li><a href="#" class="xbtn">X</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ol>
+      </div>
+    </nav>    
+  </header>
+
+  <div class="Impact">
+    <div class="Impact-content">
+      <h3>The Impact Of Your Donation</h3>
+      <p>
+        Your donation has a direct and lasting impact 
+        on the lives of animals in need. It helps 
+        provide essential care such as food, shelter, 
+        and medical treatment for animals awaiting adoption. 
+        Your generosity also supports our rescue efforts, 
+        enabling us to save animals in distress and give 
+        them the rehabilitation they deserve. Donations 
+        also fund important community outreach programs, 
+        including education on responsible pet ownership and 
+        spay/neuter services to prevent overpopulation. Together, 
+        your support makes a real difference in creating a 
+        compassionate and humane society for both animals and people.
+      </p>
+    </div>
+    <div class="Impact-image">
+      <img src="img/dog family.avif" alt="Dog Family">
+    </div>
+  </div>
+
+  <!-- Ways to Give Section -->
+  <div class="Ways-to">
+    <div class="Ways-image">
+      <img src="img/Donate.jpg" alt="Donate">
+    </div>
+    <div class="Ways-content">
+      <h2>Ways To Give</h2>
+      <p>• Make a Donation – Support our programs with a one-time or monthly gift.</p>
+      <p>• Adopt a Pet – Give a shelter animal a forever home.</p>
+      <p>• Volunteer – Donate your time to help animals in need.</p>
+      <p>• Fundraise – Organize an event or campaign to raise funds for the cause.</p>
+      <p>• Donate Supplies – Help by giving food, toys, or other essentials to support our animals.</p>
+    </div>
+  </div>
+
+  <!-- Support Section -->
+  <div class="Support">
+    <div class="Support-content">
+      <h2>Your Support Matters</h2>
+      <p>
+        Your support truly makes a difference. Whether 
+        you’re donating, adopting, or volunteering, every 
+        action helps improve the lives of animals in our care. 
+        With your help, we can provide food, shelter, medical 
+        care, and a brighter future for countless animals. 
+        Your commitment enables us to continue rescuing, 
+        rehabilitating, and finding forever homes for those 
+        who need it most. Together, we’re building a more 
+        compassionate world for animals and the community.
+      </p>
+      <p>
+        <a href="donate.html" class="btn">Donate Today</a>
+      </p>
+    </div>
+    <div class="Support-image">
+      <img src="img/Backyard.png" alt="Backyard">
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="Ftitle">
+        <h1>TORONTO</h1>
+        <h1>HUMANE</h1>
+        <h1>SOCIETY</h1>
+        <p>Like No Other</p>
+      </div>
+      <div class="footersection">
+        <h3>Home</h3>
+        <p>Like No Other</p>
+        <p>Quick Links</p>
+        <p>Contribute</p>
+      </div>
+      <div class="footersection">
+        <h3>About Us</h3>
+        <p>About</p>
+        <p>Why Choose Us</p>
+        <p>Learn More</p>
+      </div>
+      <div class="footersection">
+        <h3>Volunteer</h3>
+        <p>How To Volunteer</p>
+        <p>Opportunities</p>
+        <p>Requirements</p>
+      </div>
+      <div class="footersection">
+        <h3>Donate</h3>
+        <p>The Impact</p>
+        <p>Ways To Give</p>
+        <p>Memberships</p>
+        <p>Programs</p>
+      </div>
+      <div class="footersection">
+        <h3>Contact</h3>
+        <p>Hours & Contact</p>
+        <p>Get In Touch</p>
+        <p>Stay Connected</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger-icon');
+    const xbtn = document.querySelector('.xbtn');
+    const sideBar = document.querySelector('.side-menu');
+
+    function openSidebar() {
+      sideBar.style.width = '100vw';
+    }
+
+    function closeSidebar() {
+      sideBar.style.width = '0vw';
+    }
+
+    burger.addEventListener('click', openSidebar);
+    xbtn.addEventListener('click', closeSidebar);
+  </script>  
+</body>
+</html>
