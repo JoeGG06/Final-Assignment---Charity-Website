@@ -1,0 +1,340 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.site-header {
+  background: #4776AE;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-container img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu a {
+  background: white;
+  color: #337ab7;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-menu a:hover {
+  background: #52a0e4;
+  color: #ffffff;
+}
+
+.profile-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.About {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  background: #F0F9FF;
+  flex-wrap: wrap;
+}
+
+.About-content {
+  flex: 1 1 50%;
+  color: #4776AE;
+}
+
+.About img {
+  width: 500px;
+  height: auto;
+  display: block;
+}
+
+.About-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.About p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background: #4776AE;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.btn:hover {
+  background: #52a0e4;
+  color: white;
+}
+
+.Why-Choose {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #ffffff;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  color: #4776AE;
+}
+
+.Why-Choose img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.Why-Choose .Why-Content {
+  flex: 1;
+}
+
+.Why-Choose p {
+  margin-bottom: 1rem;
+}
+
+.Programs {
+  padding: 4rem 2rem;
+  background-color: #F0F9FF;
+}
+
+.Community-Programs {
+  background-color: #F0F9FF; 
+  padding: 2rem;
+}
+
+.Community-Programs h2,
+.Community-Programs p {
+  color: #4776AE;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex div {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.flex img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.flex p {
+  color: #4776AE;
+}
+
+.footer {
+  background-color: #4776AE;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.Ftitle h1 {
+  margin: 0;
+  font-size: 14pt;
+  line-height: 1.1;
+}
+
+.Ftitle p {
+  margin-top: 10px;
+  font-size: 10pt;
+}
+
+.footersection h3 {
+  font-size: 11pt;
+  margin-bottom: 10px;
+}
+
+.footersection p {
+  font-size: 10pt;
+  margin: 2px 0;
+  line-height: 1.4;
+}
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #4776AE;
+  transition: 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.side-menu ol {
+  list-style: none;
+  margin-top: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.side-menu ol li {
+  margin: 1rem 0;
+}
+
+.side-menu ol li a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.side-menu ol li a:hover {
+  color: #cde7ff;
+}
+
+.xbtn {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+
+  .main-menu {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+
+  .container, .main-content, .sidebar {
+    display: block;
+    width: 100%;
+  }
+
+  .header, .footer {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.About-content h2,
+.About-content p,
+.About-image img,
+.Why-Content h2,
+.Why-Content p,
+.Community-Programs h2,
+.Community-Programs p,
+.flex > div,
+.flex > div .btn,
+.btn {
+  opacity: 0;
+  animation: slideUpFade 0.8s ease-out forwards;
+}
+
+/* Add animation delays for staggered effect */
+.About-content h2        { animation-delay: 0.2s; }
+.About-content p:nth-of-type(1) { animation-delay: 0.4s; }
+.About-content p:nth-of-type(2) { animation-delay: 0.6s; }
+.About-content p:nth-of-type(3) { animation-delay: 0.8s; }
+.About-image img         { animation-delay: 1s; }
+
+.Why-Content h2          { animation-delay: 0.2s; }
+.Why-Content p:nth-of-type(1) { animation-delay: 0.3s; }
+.Why-Content p:nth-of-type(2) { animation-delay: 0.4s; }
+.Why-Content p:nth-of-type(3) { animation-delay: 0.5s; }
+.Why-Content p:nth-of-type(4) { animation-delay: 0.6s; }
+.Why-Content p:nth-of-type(5) { animation-delay: 0.7s; }
+
+.Community-Programs h2   { animation-delay: 0.3s; }
+.Community-Programs p    { animation-delay: 0.5s; }
+
+.flex > div:nth-of-type(1) { animation-delay: 0.6s; }
+.flex > div:nth-of-type(2) { animation-delay: 0.8s; }
+
+.flex > div .btn        { animation-delay: 1s; }
+
+
+

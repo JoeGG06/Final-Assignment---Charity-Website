@@ -1,0 +1,393 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  background: #4776AE;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.links a {
+  background: white;
+  color: #337ab7;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links a:hover {
+  background: #52a0e4;
+  color: #ffffff;
+}
+
+.profile-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.herocontainer {
+  background-color: #ffffff; 
+  padding: 20px; 
+  text-align: center;
+}
+
+.herocontent {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  max-width: 960px; 
+  margin: 0 auto; 
+}
+
+.title {
+  text-align: left;
+  margin-right: 300px; 
+}
+
+.title {
+  font-size: 2.5em;
+  color: #4776AE; 
+  margin-bottom: 5px;
+}
+
+.DogCat Image {
+  justify-content: left;
+}
+
+.flex div {
+  width: 30%;
+  padding: 15px;
+  text-align: center;
+}
+
+.flex img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.flex p {
+  color: #4776AE;
+}
+
+
+.btn {
+  background: #4776AE;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.btn:hover {
+  background: #52a0e4;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  background-color: #F0F9FF;
+  border: none;
+  justify-content: space-around; 
+  align-items: flex-start; 
+  
+}
+
+.flex div {
+  width: 30%;
+  padding: 15px;
+  text-align: center; 
+}
+
+
+.impact {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+}
+
+
+.btn {
+  background: #337ab7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #286090;
+}
+
+.impact {
+  color: #4776AE; 
+  margin-bottom: 5px;
+}
+
+.impact p {
+  color: #4776AE; 
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: #4776AE;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.Ftitle h1 {
+  margin: 0;
+  font-size: 14pt;
+  line-height: 1.1;
+}
+
+.Ftitle p {
+  margin-top: 10px;
+  font-size: 10pt;
+}
+
+.footersection h3 {
+  font-size: 11pt;
+  margin-bottom: 10px;
+}
+
+.footersection p {
+  font-size: 10pt;
+  margin: 2px 0;
+  line-height: 1.4;
+}
+
+
+/* Responsive Navigation */
+.burger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #4776AE;
+  transition: 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.side-menu ol {
+  list-style: none;
+  margin-top: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.side-menu ol li {
+  margin: 1rem 0;
+}
+
+.side-menu ol li a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.side-menu ol li a:hover {
+  color: #cde7ff;
+}
+
+.xbtn {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .main-menu {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+
+  .profile-img {
+    display: none;
+  }
+}
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #4776AE;
+  transition: 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.side-menu ol {
+  list-style: none;
+  margin-top: 100px;
+  padding: 0;
+  text-align: center;
+}
+
+.side-menu ol li {
+  margin: 1rem 0;
+}
+
+.side-menu ol li a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.side-menu ol li a:hover {
+  color: #cde7ff;
+}
+
+.xbtn {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width: 800px) {
+  .main-menu {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+
+  .container, .main-content, .sidebar {
+    display: block;
+    width: 100%;
+  }
+
+  .header, .footer {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title h1,
+.title p,
+.herocontent img,
+.flex > div,
+.impact-content h2,
+.impact-content p,
+.impact-content .btn,
+.btn {
+  opacity: 0;
+  animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.title h1:nth-of-type(1) { animation-delay: 0.2s; }
+.title h1:nth-of-type(2) { animation-delay: 0.4s; }
+.title h1:nth-of-type(3) { animation-delay: 0.6s; }
+.title p                 { animation-delay: 0.8s; }
+.herocontent img         { animation-delay: 1s; }
+
+.flex > div              { animation-delay: 0.5s; }
+.impact-content h2       { animation-delay: 0.3s; }
+.impact-content p        { animation-delay: 0.5s; }
+.impact-content .btn     { animation-delay: 0.7s; }
